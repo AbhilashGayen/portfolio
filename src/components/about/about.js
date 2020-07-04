@@ -2,9 +2,11 @@ import React from "react"
 import TechStack from "../../components/TechStack"
 import { AboutStyle } from "./styles"
 import about from "../../images/about.png"
+import ForwardLink from "../forwardLink"
 
 const About = () => {
   return (
+    <>
     <AboutStyle>
       <img src={about} alt="About" width="100%" />
       <br />
@@ -36,6 +38,8 @@ const About = () => {
       </p>
       <TechStack />
     </AboutStyle>
+    <ForwardLink label="work" navigate="/work" />
+    </>
   )
 }
 

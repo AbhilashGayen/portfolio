@@ -1,5 +1,6 @@
 import React from "react"
 import landing from "../../images/landing.svg"
+import ForwardLink from "../forwardLink"
 
 import { Container, Div, Left, Right } from "./styles"
 
@@ -28,6 +29,7 @@ const Landing = () => {
           </Right>
         </Div>
       </Container>
+      <ForwardLink label="about" navigate="/about" />
     </>
   )
 }
