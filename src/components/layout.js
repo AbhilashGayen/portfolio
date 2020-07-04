@@ -1,12 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-
+import Header from "./header/header"
+import "./layout.css"
 
 const Main = styled.div`
   position: relative;
   z-index: 2;
-  background: orange;
+  background: white;
   height: 100vh;
+  margin: 0;
   margin-bottom: 20vh;
   box-shadow: 3px 2px 2px 0px rgba(51, 51, 51, 0.5);
 `
@@ -22,15 +24,12 @@ const Footer = styled.div`
   color: #f56469;
 `
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <>
-      <Main>
-        Main
-      </Main>
-      <Footer>
-        Footer
-      </Footer>
+      <Header />
+      <Main>{children}</Main>
+      <Footer>Footer</Footer>
     </>
   )
 }
