@@ -17,6 +17,7 @@ const BaseStyle = styled.html`
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Home" />
     <Landing />
   </Layout>
 )

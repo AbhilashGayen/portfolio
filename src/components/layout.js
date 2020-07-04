@@ -7,7 +7,7 @@ const Main = styled.div`
   position: relative;
   z-index: 2;
   background: white;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   margin-bottom: 20vh;
   box-shadow: 3px 2px 2px 0px rgba(51, 51, 51, 0.5);
