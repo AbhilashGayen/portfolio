@@ -1,76 +1,100 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { breakpoints } from "../components/Media"
-import arrow from "../images/arrow.svg"
 
 const Div = styled.div`
-  width: 90%;
-  height: auto;
-  overflow: hidden;
-  margin: auto;
-  padding: auto 5rem;
   display: flex;
   justify-content: flex-end;
-
-  @media (max-width: ${breakpoints.mobileMax}) {
-    width: 100%;
-    padding: 0;
-  }
 `
 
 const Button = styled.button`
-  background-color: transparent;
-  position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  color: #000;
-  font-size: 1rem;
-  padding: 1rem;
-  width: 120px;
-  transition: all 0.5s;
-  margin: 0.1rem;
-  border: none;
-  font-family: "Katwijk";
-  outline: none;
-  box-shadow: none;
+  padding: 10px 15px;
+  position: relative;
   cursor: pointer;
+  border: none;
+  background: transparent;
+  /* button */
 
-  @media (max-width: 720px) {
-    width: 60px;
+  .link {
+    font-family: "Rubik", sans-serif;
+    background-color: transparent;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #295c91;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 0;
+    padding-left: 20px;
+    left: 0;
+    line-height: auto;
+    overflow: hidden;
+
+    /*line*/
+    &:before {
+      content: "";
+      background-color: #ff5733;
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+      left: 0px;
+      top: 0px;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+    /*arrow*/
+    &:after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      position: absolute;
+      border: solid 3px #ff5733;
+      border-left: 0;
+      border-bottom: 0;
+      top: calc(50% - 9px);
+      border-radius: 2px;
+      transform: translateX(-42px) rotate(45deg);
+      transition: all 0.3s 0.2s ease-in-out;
+    }
   }
-
-  img {
-    margin: 10px;
-  }
-
-  :after {
-    content: ${props => `'${props.label}'`};
+  /* bg button */
+  &:before {
+    content: "";
+    background-color: #ffd006;
+    width: 0;
+    height: 100%;
     position: absolute;
-    opacity: 0;
-    right: -15px;
-    transition: 0.5s;
-
-    @media (max-width: 720px) {
-      opacity: 1;
-      top: 22px;
-      right: 43px;
-    }
+    right: 0;
+    top: 0px;
+    border-radius: 3px;
+    transition: all 0.2s 0.4s ease-in-out;
   }
+  &:hover {
+    &:before {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0px;
+    }
 
-  :hover {
-    padding-right: 20px;
-    padding-left: 8px;
-  
-    :after {
-      opacity: 1;
-      right: 110px;
-    }
-    @media (max-width: 720px) {
-      :after {
-      opacity: 1;
-      right: 50px;
-    }
+    .link {
+      padding-left: 50px;
+
+      &:before {
+        left: 17px;
+
+        transform: rotate(90deg);
+      }
+
+      &:after {
+        transform: translate(-33px) rotate(45deg);
+      }
     }
   }
 `
@@ -78,11 +102,11 @@ const Button = styled.button`
 const ForwardLink = ({ label, navigate }) => {
   return (
     <Div>
-      <Link className="link" to={navigate}>
-        <Button label={label}>
-          <img src={arrow} alt="alt" />
-        </Button>
-      </Link>
+      <Button>
+        <Link to={navigate} className="link">
+          {label}
+        </Link>
+      </Button>
     </Div>
   )
 }
