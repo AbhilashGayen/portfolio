@@ -2,13 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const Div = styled.div`
+// const Div = styled.div`
+//   display: flex;
+//   justify-content: flex-end;
+// `
+
+const Button = styled.div`
   display: flex;
   justify-content: flex-end;
-`
-
-const Button = styled.button`
-  display: flex;
   align-items: center;
   padding: 10px 15px;
   position: relative;
@@ -66,7 +67,12 @@ const Button = styled.button`
   /* bg button */
   &:before {
     content: "";
-    background-color: #ffd006;
+    background: rgb(254, 254, 254);
+    background: linear-gradient(
+      90deg,
+      rgba(254, 254, 254, 1) 0%,
+      rgba(255, 208, 6, 1) 100%
+    );
     width: 0;
     height: 100%;
     position: absolute;
@@ -101,13 +107,11 @@ const Button = styled.button`
 
 const ForwardLink = ({ label, navigate }) => {
   return (
-    <Div>
+    <Link to={navigate}>
       <Button>
-        <Link to={navigate} className="link">
-          {label}
-        </Link>
+        <div className="link">{label}</div>
       </Button>
-    </Div>
+    </Link>
   )
 }
 
