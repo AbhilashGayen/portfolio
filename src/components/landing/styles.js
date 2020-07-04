@@ -57,11 +57,11 @@ export const Left = styled.div`
 
   h1 {
     display: inline-block;
-    font-size: 4.2vw;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    font-family: "Katwijk";
-    letter-spacing: -0.2rem;
+    font-size: 4.7vw;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-family: "RadioGrotesk";
+    letter-spacing: 0.2rem;
     color: #293241;
   }
 
@@ -69,7 +69,7 @@ export const Left = styled.div`
     font-size: 2.3vw;
     line-height: 1.4;
     font-family: "Klima";
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
   }
 
   .color {
@@ -125,10 +125,11 @@ export const Right = styled.div`
 export const ButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-items: flex-start;
   align-items: center;
   text-align: center;
-  margin: 0;
+  margin-top: 1.5rem;
+  margin-left: 0;
   padding: 0;
 
   @media (max-width: 720px) {
