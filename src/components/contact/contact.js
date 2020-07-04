@@ -46,7 +46,7 @@ class Contact extends React.Component {
     return (
       <Background>
         <Div>
-          <StyledAnchor>
+          <StyledAnchor href="mailto: abhilashgayen@gmail.com">
             <span id="emailName"></span>
             <span className="tenant-style" id="tenantName"></span>
           </StyledAnchor>

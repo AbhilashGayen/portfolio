@@ -5,21 +5,24 @@ import { breakpoints } from "../Media"
 import logo from "../../images/logo512.png"
 
 const Container = styled.div`
+  
   padding: 2rem 1rem;
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin: auto;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;  
   justify-content: space-between;
 
   img {
     margin: 0;
   }
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    padding: 2rem 3rem;
+  @media (max-width: 720px) {
+    width: 95%;
+    padding: 0 1rem;
+    flex-wrap: wrap;
   }
 `
 
@@ -32,9 +35,9 @@ const StyledLink = styled(Link)`
 const Social = styled.div`
   a {
     font-family: "Katwijk";
-    font-size: 1.5rem;
-    color: #295c91;
-    margin: 0 0 0 30px;
+    font-size: 1rem;
+    color: #f2f2f2;
+    margin: 0 1rem 0 30px;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
     padding-bottom: 3px;
@@ -48,7 +51,7 @@ const Social = styled.div`
 const Footer = () => (
   <Container>
     <StyledLink stitle="Home | Abhiash" to="/">
-      <img src={logo} alt="logo" width="75" />
+      <img src={logo} alt="logo" width="45" />
     </StyledLink>
     <Social>
       <a
@@ -63,7 +66,7 @@ const Footer = () => (
         title="LinkedIn - AbhilashGayen"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.linkedin.com/abhilashgayen/"
+        href="https://www.linkedin.com/in/abhilash-gayen"
       >
         linkedin
       </a>

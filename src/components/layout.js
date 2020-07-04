@@ -11,8 +11,10 @@ const Main = styled.div`
   background: white;
   height: ${props => (props.height === "true" ? "100vh" : "100%")};
   margin: 0;
-  margin-bottom: 20vh;
-  box-shadow: 3px 2px 2px 0px #f4f3ee;
+  margin-bottom: 15vh;
+  @media (max-width: 720px) {
+    margin-bottom: 10vh;
+  }
 `
 
 const FooterStyle = styled.div`
@@ -21,12 +23,15 @@ const FooterStyle = styled.div`
   margin: 0;
   bottom: 0;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   padding: 0;
   background: #4b466f;
   font-size: 30px;
   background-color: #232323;
- 
+
+  @media (max-width: 720px) {
+    height: 10vh;
+  }
 `
 
 const Layout = ({ height, children }) => {

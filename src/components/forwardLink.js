@@ -36,7 +36,7 @@ const Button = styled.button`
   box-shadow: none;
   cursor: pointer;
 
-  @media (max-width: ${breakpoints.mobileMax}) {
+  @media (max-width: 720px) {
     width: 60px;
   }
 
@@ -50,7 +50,8 @@ const Button = styled.button`
     opacity: 0;
     right: -15px;
     transition: 0.5s;
-    @media (max-width: ${breakpoints.mobileMax}) {
+
+    @media (max-width: 720px) {
       opacity: 1;
       top: 22px;
       right: 43px;
@@ -60,11 +61,17 @@ const Button = styled.button`
   :hover {
     padding-right: 20px;
     padding-left: 8px;
-  }
-
-  :hover:after {
-    opacity: 1;
-    right: 110px;
+  
+    :after {
+      opacity: 1;
+      right: 110px;
+    }
+    @media (max-width: 720px) {
+      :after {
+      opacity: 1;
+      right: 50px;
+    }
+    }
   }
 `
 

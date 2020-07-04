@@ -3,7 +3,6 @@ import "./button.css"
 
 const Button = () => (
   <a
-    style={{ margin: 0 }}
     href="https://drive.google.com/file/d/1xookLIeb3ezYXPCz7Py745MV_pnqcPxb/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
