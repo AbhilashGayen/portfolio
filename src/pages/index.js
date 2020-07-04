@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Landing from "../components/landing/landing"
 
 const IndexPage = () => (
-  <Layout height="true">
+  <Layout height="false">
     <SEO title="Home" />
     <Landing />
   </Layout>
