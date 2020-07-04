@@ -1,9 +1,10 @@
-import { createGlobalStyle } from "styled-components";
-import Muli from "./Muli.ttf";
-import Katwijk from "./Katwijk.ttf";
-import Graph from "./Graph.ttf";
-import Klima from "./Klima.ttf";
-import HindSiliguri from "./HindSiliguri.ttf";
+import { createGlobalStyle } from "styled-components"
+import Muli from "./Muli.ttf"
+import Katwijk from "./Katwijk.ttf"
+import Graph from "./Graph.ttf"
+import Klima from "./Klima.ttf"
+import HindSiliguri from "./HindSiliguri.ttf"
+import RadioGrotesk from "./RadioGrotesk.otf"
 
 export default createGlobalStyle`
     @font-face {
@@ -26,4 +27,8 @@ export default createGlobalStyle`
         font-family: 'HindSiliguri';
         src: url(${HindSiliguri}) format('truetype');
     }
-`;
+    @font-face {
+        font-family: 'RadioGrotesk';
+        src: url(${RadioGrotesk}) format('opentype');
+    }
+`
