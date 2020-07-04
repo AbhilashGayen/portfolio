@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { breakpoints } from "../Media"
 import logo from "../../images/logo512.png"
 
 const Container = styled.div`

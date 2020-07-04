@@ -132,7 +132,7 @@ export const ButtonContainer = styled.div`
   padding: 0;
 
   @media (max-width: 720px) {
-    margin-top: 0;
+    margin-top: 1.5rem;
     flex-direction: column;
     justify-content: center;
   }
