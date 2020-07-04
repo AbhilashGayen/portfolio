@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { Background, Div, H1, StyledAnchor } from "./styles.js"
+import React from "react"
+import { Background, Div, StyledAnchor } from "./styles.js"
 
 var i = 0
 var j = 0
@@ -47,8 +47,8 @@ class Contact extends React.Component {
       <Background>
         <Div>
           <StyledAnchor>
-            <h1 id="emailName"></h1>
-            <h1 className="tenant-style" id="tenantName"></h1>
+            <span id="emailName"></span>
+            <span className="tenant-style" id="tenantName"></span>
           </StyledAnchor>
         </Div>
       </Background>

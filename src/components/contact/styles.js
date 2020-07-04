@@ -41,9 +41,9 @@ export const StyledAnchor = styled.a`
       1px 1px 0 #6e1f58, 1px 0px 0px #ff0080;
   }
 
-  h1 {
+  span {
     margin: 0;
-    padding: 0;
+    padding: 30px 0;
     font-size: 7vw;
     font-weight: 700;
     font-stretch: 150%;
@@ -51,7 +51,7 @@ export const StyledAnchor = styled.a`
 
   .tenant-style {
     margin: 0;
-    padding: 0;
+    padding: 30px 0;
     font: 0;
     font-weight: 300;
     font-stretch: 1%;
@@ -59,7 +59,7 @@ export const StyledAnchor = styled.a`
   }
 
   :hover {
-    h1 {
+    span {
       font-weight: 300;
       font-stretch: 1%;
     }

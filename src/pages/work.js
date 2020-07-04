@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const WorkPage = () => (
-  <Layout>
+  <Layout height="false">
     <SEO title="Work" />
   </Layout>
 )

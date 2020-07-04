@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import About from "../components/about/about"
 
 const AboutPage = () => (
-  <Layout height={false}>
+  <Layout height="false">
     <SEO title="About" />
     <About />
   </Layout>
