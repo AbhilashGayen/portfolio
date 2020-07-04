@@ -1,17 +1,18 @@
 import React from "react"
-import "./button.css"
+import "./button.sass"
 
 const Button = () => (
   <a
     href="https://drive.google.com/file/d/1xookLIeb3ezYXPCz7Py745MV_pnqcPxb/view?usp=sharing"
+    className="cta"
     target="_blank"
     rel="noopener noreferrer"
-    className="btn btn-1"
   >
-    <svg>
-      <rect x="0" y="0" fill="none" width="100%" height="100%" />
+    <span>Resume</span>
+    <svg width="13px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
     </svg>
-    Résumé
   </a>
 )
 
