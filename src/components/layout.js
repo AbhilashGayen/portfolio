@@ -8,7 +8,7 @@ const Main = styled.div`
   position: relative;
   z-index: 2;
   background: white;
-  height: 100%;
+  height: ${props => (props.height ? "100vh" : "100%")};
   margin: 0;
   margin-bottom: 20vh;
   box-shadow: 3px 2px 2px 0px rgba(51, 51, 51, 0.5);
@@ -25,12 +25,12 @@ const Footer = styled.div`
   color: #f56469;
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ height, children }) => {
   return (
     <>
       <GlobalFonts />
       <Header />
-      <Main>{children}</Main>
+      <Main height={height}>{children}</Main>
       <Footer>Footer</Footer>
     </>
   )

@@ -6,7 +6,7 @@ import about from "../../images/about.png"
 const About = () => {
   return (
     <AboutStyle>
-      <img src={about} alt="" />
+      <img src={about} alt="About" width="100%" />
       <br />
       <h1>Hello</h1>
       <p>
