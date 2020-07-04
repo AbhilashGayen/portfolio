@@ -84,13 +84,13 @@ export const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  padding-top: 0.4rem;
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "Katwijk";
 
   li {
-    padding: 0.7rem 1rem;
+    margin: 0;
+    padding: 0 1rem;
   }
 
   .link {
@@ -127,6 +127,11 @@ export const Ul = styled.ul`
     font-family: "Graph";
     outline: none;
     box-shadow: none;
+
+    li {
+      margin-bottom: 1rem;
+      padding: 0.7rem 1rem;
+    }
 
     .link {
       color: #fff;

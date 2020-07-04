@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Header from "./header/header"
 import "./layout.css"
 import GlobalFonts from "../assets/fonts/font"
+import Footer from "./footer/footer"
 
 const Main = styled.div`
   position: relative;
@@ -11,18 +12,21 @@ const Main = styled.div`
   height: ${props => (props.height === "true" ? "100vh" : "100%")};
   margin: 0;
   margin-bottom: 20vh;
-  box-shadow: 3px 2px 2px 0px rgba(51, 51, 51, 0.5);
+  box-shadow: 3px 2px 2px 0px #f4f3ee;
 `
 
-const Footer = styled.div`
+const FooterStyle = styled.div`
   position: fixed;
+  display: flex;
+  margin: 0;
   bottom: 0;
   width: 100%;
   height: 20vh;
-  padding-left: 50px;
+  padding: 0;
   background: #4b466f;
   font-size: 30px;
-  color: #f56469;
+  background-color: #232323;
+ 
 `
 
 const Layout = ({ height, children }) => {
@@ -31,7 +35,9 @@ const Layout = ({ height, children }) => {
       <GlobalFonts />
       <Header />
       <Main height={height}>{children}</Main>
-      <Footer>Footer</Footer>
+      <FooterStyle>
+        <Footer />
+      </FooterStyle>
     </>
   )
 }
