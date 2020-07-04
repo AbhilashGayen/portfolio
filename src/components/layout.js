@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Header from "./header/header"
 import "./layout.css"
+import GlobalFonts from "../assets/fonts/font"
 
 const Main = styled.div`
   position: relative;
@@ -27,6 +28,7 @@ const Footer = styled.div`
 const Layout = ({ children }) => {
   return (
     <>
+      <GlobalFonts />
       <Header />
       <Main>{children}</Main>
       <Footer>Footer</Footer>
