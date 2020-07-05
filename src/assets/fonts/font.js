@@ -3,7 +3,7 @@ import Katwijk from "./Katwijk.ttf"
 import Graph from "./Graph.ttf"
 import Klima from "./Klima.ttf"
 import HindSiliguri from "./HindSiliguri.ttf"
-import WorkSans from "./WorkSans.ttf"
+import AcuminBold from "./AcuminBold.woff"
 
 export default createGlobalStyle`
     @font-face {
@@ -23,7 +23,7 @@ export default createGlobalStyle`
         src: url(${HindSiliguri}) format('truetype');
     }
     @font-face {
-        font-family: 'WorkSans';
-        src: url(${WorkSans}) format('truetype');
+        font-family: 'AcuminBold';
+        src: url(${AcuminBold}) format('woff');
     }
 `
