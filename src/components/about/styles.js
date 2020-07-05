@@ -12,6 +12,7 @@ export const AboutStyle = styled.div`
     color: #282c34;
     font-family: "Graph";
     letter-spacing: 0.2px;
+    padding: 0.5rem 0;
   }
 
   p {
@@ -20,6 +21,7 @@ export const AboutStyle = styled.div`
     font-size: 18px;
     line-height: 1.8rem;
     letter-spacing: 0.6px;
+    padding: 0.6rem 0;
   }
 
   @media (max-width: 720px) {
