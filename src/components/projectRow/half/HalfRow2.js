@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { breakpoints } from "../../Media";
-import Heading from "../../Heading";
-import Paragraph from "../../Paragraph";
-import Animated from "../../../images/business-manager.png";
-import trivia from "../../../images/ecommerce.png";
+import React from "react"
+import styled from "styled-components"
+import { breakpoints } from "../../Media"
+import Heading from "../../Heading"
+import Paragraph from "../../Paragraph"
+import Animated from "../../../images/business-manager.png"
+import trivia from "../../../images/ecommerce.png"
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const ProjectContainer = styled.div`
     margin-top: 40px;
     height: 500px;
   }
-`;
+`
 
 const ProjectLink = styled(Paragraph)`
   font-weight: 700;
@@ -38,14 +38,14 @@ const ProjectLink = styled(Paragraph)`
   span {
     font-size: 20px;
   }
-`;
+`
 
 const ProjectImage = styled.div`
   width: 100%;
   height: 300px;
   border-radius: 4px;
   transition-duration: 0.3s;
-`;
+`
 
 const Project = styled.div`
   width: 100%;
@@ -93,15 +93,15 @@ const Project = styled.div`
       background-position-y: center;
     }
   }
-`;
+`
 
 const SubHeading = styled(Heading)`
   font-size: 30px;
   margin-bottom: 0;
   margin-top: 30px;
   color: black;
-  font-family: 'Klima'
-`;
+  font-family: "Klima";
+`
 
 const ProjectParagraph = styled(Paragraph)`
   margin-top: 10px;
@@ -111,7 +111,7 @@ const ProjectParagraph = styled(Paragraph)`
   @media (min-width: ${breakpoints.mobileMax}) {
     max-width: 70%;
   }
-`;
+`
 
 function HalfRow2() {
   return (
@@ -181,7 +181,7 @@ function HalfRow2() {
         </a>
       </Project>
     </ProjectContainer>
-  );
+  )
 }
 
-export default HalfRow2;
+export default HalfRow2
