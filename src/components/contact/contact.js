@@ -5,7 +5,7 @@ var i = 0
 var j = 0
 const email = "abhilashgayen"
 const tenant = "@gmail.com"
-var speed = 200
+var speed = 175
 var value = false
 
 function typeEmail() {
