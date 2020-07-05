@@ -1,16 +1,11 @@
 import { createGlobalStyle } from "styled-components"
-import Muli from "./Muli.ttf"
 import Katwijk from "./Katwijk.ttf"
 import Graph from "./Graph.ttf"
 import Klima from "./Klima.ttf"
 import HindSiliguri from "./HindSiliguri.ttf"
-import RadioGrotesk from "./RadioGrotesk.otf"
+import WorkSans from "./WorkSans.ttf"
 
 export default createGlobalStyle`
-    @font-face {
-        font-family: 'Muli';
-        src: url(${Muli}) format('truetype');
-    }
     @font-face {
         font-family: 'Katwijk';
         src: url(${Katwijk}) format('truetype');
@@ -28,7 +23,7 @@ export default createGlobalStyle`
         src: url(${HindSiliguri}) format('truetype');
     }
     @font-face {
-        font-family: 'RadioGrotesk';
-        src: url(${RadioGrotesk}) format('opentype');
+        font-family: 'WorkSans';
+        src: url(${WorkSans}) format('truetype');
     }
 `
