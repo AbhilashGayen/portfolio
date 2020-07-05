@@ -27,10 +27,10 @@ const About = () => {
         </p>
         <p>
           At Wipro Limited, I've worked alongside senior designers, developers
-          and architects who have raised my standards for whats expected of any
-          application. By being a part of their breakthrough solution, I've had
-          the opportunity to interact and manage multiple clients across various
-          time-zones.
+          and architects who have raised my standards for what is expected of
+          any application. By being a part of their breakthrough solution, I've
+          had the opportunity to interact and manage multiple clients across
+          various time-zones.
         </p>
         <p>
           Through these experiences, I've had the opportunity to create

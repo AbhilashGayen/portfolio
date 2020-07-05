@@ -10,7 +10,7 @@ const ProjectContainer = styled.div`
   width: 80%;
   margin: auto;
   padding-top: 2rem;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
   margin-top: 0px;
   height: auto;
@@ -28,22 +28,21 @@ const ProjectLink = styled(Paragraph)`
   font-size: 14px;
   line-height: 163.19%;
   display: inline;
-  color: gray;
+  color: black;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s;
+  cursor: pointer;
 
   @media (min-width: ${breakpoints.mobileMax}) {
-    width: 119px;
+    width: 78px;
     display: block;
     margin: auto;
   }
-
   :hover {
-    /* border-bottom: 2px solid black; */
+    border-bottom: 2px solid black;
   }
-
   span {
     font-size: 20px;
   }
@@ -115,14 +114,22 @@ function FullProjectRow() {
           <SubHeading>NetOxygen Launchpad</SubHeading>
         </a>
         <ProjectParagraph>
-          Currently working on Launchpad at Wipro Limited, as a frontend
-          developer, gradually evolving into a full stack developer.
-          <br />
-          The NetOxygen Launchpad portal transforms the loan application
-          experience by enabling device/OS independent access, actionable
-          real-time to-do items, uploading of documents with ADR/OCR capability,
-          intelligent chatbot and auto-population of key borrower information.
+          Working for NetOxygen at Wipro has taught me so much about myself and
+          about the professional I aim to be. I learnt a ton about Angular,
+          TypeScript, SQL but I also learnt so much about how to be a developer
+          with integrity, communicate across teams and clients, and be a
+          valuable member. Working alongside extremely talented developers
+          inspired me and pushed my boundaries as a professional.
         </ProjectParagraph>
+        <a
+          href="https://www.wipro.com/banking/gallagher/products/netoxygen-launchpad/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ProjectLink>
+            View Site <span>&#8250;</span>
+          </ProjectLink>
+        </a>
       </Project>
     </ProjectContainer>
   )
