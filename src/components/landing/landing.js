@@ -19,7 +19,7 @@ const Landing = () => {
               transition={{ delay: 0.2, duration: 1 }}
             >
               <h1>
-                Abhilash Gayen
+                Abhilash
                 <span className="color wave">!</span>
               </h1>
             </motion.div>

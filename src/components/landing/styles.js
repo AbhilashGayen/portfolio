@@ -60,7 +60,6 @@ export const Left = styled.div`
     display: inline-block;
     font-size: 68px;
     line-height: 1.1;
-    margin-bottom: 0.3rem;
     font-family: "AcuminBold";
     letter-spacing: 0.1rem;
     color: #22223b;
