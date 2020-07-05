@@ -4,6 +4,7 @@ import Header from "./header/header"
 import "./layout.css"
 import GlobalFonts from "../assets/fonts/font"
 import Footer from "./footer/footer"
+import { motion } from "framer-motion"
 
 const Main = styled.div`
   position: relative;
@@ -39,10 +40,16 @@ const Layout = ({ height, children }) => {
     <>
       <GlobalFonts />
       <Header />
-      <Main height={height}>{children}</Main>
-      <FooterStyle>
-        <Footer />
-      </FooterStyle>
+      <motion.div enterAfterExit
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <Main height={height}>{children}</Main>
+        <FooterStyle>
+          <Footer />
+        </FooterStyle>
+      </motion.div>
     </>
   )
 }
