@@ -71,8 +71,7 @@ export const Left = styled.div`
     color: #442e2e;
     font-size: 54px;
     line-height: 1.3;
-    font-family: "HindSiliguri";
-    font-weight: 200;
+    font-family: "Klima";
   }
 
   .color {
@@ -96,14 +95,16 @@ export const Left = styled.div`
     width: 100%;
     margin: 2rem auto 0 auto;
     h1 {
-      font-size: 18px;
+      font-family: 'Katwijk';
+      font-size: 24px;
       line-height: 1.5;
+      font-weight: 900;
     }
 
     p {
-      font-size: 28px;
-      line-height: 1.4;
-      font-weight: 400;
+      font-size: 32px;
+      line-height: 1.3;
+      letter-spacing: 0.15rem;
     }
   }
 `

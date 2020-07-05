@@ -19,9 +19,9 @@ const Button = styled.div`
   /* button */
 
   .link {
-    font-family: "Katwijk";
+    font-family: "Klima";
     background-color: transparent;
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #295c91;
     position: relative;
@@ -42,15 +42,15 @@ const Button = styled.div`
       position: absolute;
       z-index: 2;
       left: 0px;
-      top: 0px;
+      top: -1px;
       border-radius: 50px;
       transition: all 0.3s ease-in-out;
     }
     /*arrow*/
     &:after {
       content: "";
-      width: 15px;
-      height: 15px;
+      width: 12px;
+      height: 12px;
       display: flex;
       align-items: center;
       background-color: transparent;
@@ -99,7 +99,7 @@ const Button = styled.div`
       }
 
       &:after {
-        transform: translate(-33px) rotate(45deg);
+        transform: translate(-34px) rotate(45deg);
       }
     }
   }
