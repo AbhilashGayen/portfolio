@@ -102,7 +102,7 @@ export const Left = styled.div`
   }
 
   @media (max-width: 720px) {
-    text-align: center;
+    text-align: left;
     width: 100%;
     margin: 2rem auto 1rem auto;
 
@@ -113,7 +113,7 @@ export const Left = styled.div`
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 44px;
       line-height: 1.2;
       text-align: left;
     }
