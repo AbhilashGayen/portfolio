@@ -56,22 +56,33 @@ export const Left = styled.div`
   justify-content: center;
 
   h1 {
+    padding-top: 0.5rem;
+    display: inline-block;
+    font-size: 68px;
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+    font-family: "AcuminBold";
+    letter-spacing: 0.1rem;
+    color: #22223b;
+    opacity: 0.9;
+  }
+
+  h4 {
+    padding-left: 0.3vw;
+    margin: 0;
     display: inline-block;
     font-size: 18px;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-    font-family: "Avenir";
-    letter-spacing: 0.1rem;
-    color: #264653;
-    margin-left: 6px;
-    opacity: 0.7;
+    font-family: "AcuminBold";
+    color: #22223b;
+    opacity: 0.8;
   }
 
   p {
-    color: #442e2e;
-    font-size: 54px;
-    line-height: 1.3;
+    color: #242423;
+    font-size: 42px;
+    line-height: 1.4;
     font-family: "Klima";
+    letter-spacing: 0.15rem;
   }
 
   .color {
@@ -93,18 +104,25 @@ export const Left = styled.div`
   @media (max-width: 720px) {
     text-align: center;
     width: 100%;
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto 1rem auto;
+
+    h4 {
+      padding-left: 1vw;
+      text-align: left;
+      font-size: 16px;
+    }
+
     h1 {
-      font-family: 'Katwijk';
-      font-size: 24px;
-      line-height: 1.5;
-      font-weight: 900;
+      font-size: 40px;
+      line-height: 1.2;
+      text-align: left;
     }
 
     p {
-      font-size: 32px;
-      line-height: 1.3;
-      letter-spacing: 0.15rem;
+      text-align: left;
+      font-size: 26px;
+      line-height: 1.4;
+      letter-spacing: 0.2rem;
     }
   }
 `
@@ -139,10 +157,4 @@ export const ButtonContainer = styled.div`
   margin-top: 1.5rem;
   margin-left: 0;
   padding: 0;
-
-  @media (max-width: 720px) {
-    margin-top: 1.5rem;
-    flex-direction: column;
-    justify-content: center;
-  }
 `

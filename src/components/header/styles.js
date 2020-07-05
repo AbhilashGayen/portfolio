@@ -28,20 +28,11 @@ export const Logo = styled.div`
 
 export const Image = styled.img`
   margin: 0;
-  animation: ${fadeIn} 2s;
   transition: all 0.4s ease-in-out;
-
-  > :hover {
-    transform: scale(1.1);
 
     @media (max-width: 640px) {
       padding: 2px;
-
-      > :hover {
-        transform: scale(1);
-      }
     }
-  }
 `
 
 export const StyledBurger = styled.div`

@@ -82,7 +82,7 @@ const SubHeading = styled(Heading)`
   font-size: 30px;
   margin-bottom: 0;
   margin-top: 30px;
-  font-family: "Klima";
+  font-family: "AcuminBold";
 
   @media (min-width: ${breakpoints.mobileMax}) {
     text-align: center;

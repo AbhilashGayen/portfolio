@@ -8,7 +8,7 @@ to { width: 85% }
 export const Background = styled.div`
   background: linear-gradient(45deg, rgb(38, 44, 65) 0%, rgb(70, 80, 122) 100%);
   display: flex;
-  height: 100vh;
+  height: 90vh;
   margin-bottom: 15vh;
   align-items: center;
   @media(max-width: 720px){
