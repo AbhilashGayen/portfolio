@@ -48,7 +48,7 @@ export const Div = styled.div`
 
 export const Left = styled.div`
   float: left;
-  width: 40%;
+  width: 45%;
   height: auto;
   margin: 1rem;
   display: flex;
@@ -57,23 +57,30 @@ export const Left = styled.div`
 
   h1 {
     display: inline-block;
-    font-size: 4.7vw;
+    font-size: 18px;
     line-height: 1.1;
-    margin-bottom: 1.5rem;
-    font-family: "RadioGrotesk";
-    letter-spacing: 0.2rem;
-    color: #293241;
+    margin-bottom: 0.5rem;
+    font-family: "Avenir";
+    letter-spacing: 0.1rem;
+    color: #264653;
+    margin-left: 6px;
+    opacity: 0.7;
   }
 
   p {
-    font-size: 2.3vw;
-    line-height: 1.4;
-    font-family: "Klima";
-    letter-spacing: 0.1rem;
+    color: #442e2e;
+    font-size: 54px;
+    line-height: 1.3;
+    font-family: "HindSiliguri";
+    font-weight: 200;
   }
 
   .color {
-    color: red;
+    color: #ff5733;
+    opacity: 0.8;
+    :hover {
+      opacity: 1;
+    }
   }
 
   .wave {
@@ -89,21 +96,21 @@ export const Left = styled.div`
     width: 100%;
     margin: 2rem auto 0 auto;
     h1 {
-      font-size: 11vw;
+      font-size: 18px;
       line-height: 1.5;
     }
 
     p {
-      font-size: 5.7vw;
-      line-height: 1.5;
-      letter-spacing: 0.1rem;
+      font-size: 28px;
+      line-height: 1.4;
+      font-weight: 400;
     }
   }
 `
 
 export const Right = styled.div`
   float: right;
-  width: 60%;
+  width: 55%;
   height: auto;
   color: white;
   margin-top: 1rem;

@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { breakpoints } from "../../Media";
-import Heading from "../../Heading";
-import Paragraph from "../../Paragraph";
-import Launchpad from "../../../images/Launchpad.png";
+import React from "react"
+import styled from "styled-components"
+import { breakpoints } from "../../Media"
+import Heading from "../../Heading"
+import Paragraph from "../../Paragraph"
+import Launchpad from "../../../images/Launchpad.png"
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const ProjectContainer = styled.div`
     margin-bottom: 70px;
     margin-top: 40px;
   }
-`;
+`
 
 const ProjectLink = styled(Paragraph)`
   font-weight: 700;
@@ -47,7 +47,7 @@ const ProjectLink = styled(Paragraph)`
   span {
     font-size: 20px;
   }
-`;
+`
 
 const ProjectImage = styled.img`
   width: 100%;
@@ -57,7 +57,7 @@ const ProjectImage = styled.img`
   @media (min-width: ${breakpoints.mobileMax}) {
     margin: auto;
   }
-`;
+`
 
 const Project = styled.div`
   width: 100%;
@@ -75,20 +75,20 @@ const Project = styled.div`
       border-bottom: 2px solid black;
     }
   }
-`;
+`
 
 const SubHeading = styled(Heading)`
   color: black;
   font-size: 30px;
   margin-bottom: 0;
   margin-top: 30px;
-  font-family: "Muli";
+  font-family: "Klima";
 
   @media (min-width: ${breakpoints.mobileMax}) {
     text-align: center;
     margin: 30px auto 0 auto;
   }
-`;
+`
 
 const ProjectParagraph = styled(Paragraph)`
   margin-top: 10px;
@@ -100,7 +100,7 @@ const ProjectParagraph = styled(Paragraph)`
     text-align: center;
     margin: 10px auto 20px auto;
   }
-`;
+`
 
 function FullProjectRow() {
   return (
@@ -115,7 +115,8 @@ function FullProjectRow() {
           <SubHeading>NetOxygen Launchpad</SubHeading>
         </a>
         <ProjectParagraph>
-          Currently working on Launchpad at Wipro Limited, as a frontend developer, gradually evolving into a full stack developer.
+          Currently working on Launchpad at Wipro Limited, as a frontend
+          developer, gradually evolving into a full stack developer.
           <br />
           The NetOxygen Launchpad portal transforms the loan application
           experience by enabling device/OS independent access, actionable
@@ -124,7 +125,7 @@ function FullProjectRow() {
         </ProjectParagraph>
       </Project>
     </ProjectContainer>
-  );
+  )
 }
 
-export default FullProjectRow;
+export default FullProjectRow

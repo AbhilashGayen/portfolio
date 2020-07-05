@@ -19,7 +19,7 @@ const Button = styled.div`
   /* button */
 
   .link {
-    font-family: "Rubik", sans-serif;
+    font-family: "Katwijk";
     background-color: transparent;
     font-size: 28px;
     letter-spacing: 2px;

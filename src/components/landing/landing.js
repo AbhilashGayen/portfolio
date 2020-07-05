@@ -12,13 +12,12 @@ const Landing = () => {
         <Div>
           <Left>
             <h1>
-              Hi there,
-              <br />
-              I'm Abhilash
-              <span className="color wave">!</span>
+             
+              ABHILASH GAYEN
+              {/* <span className="color wave">!</span> */}
             </h1>
             <p>
-              Front End <span className="color">Developer</span>, <br />
+              Frontend <span className="color">Developer</span>, <br />
               Software <span className="color">Engineer</span>,
               <br />
               and working at <span className="color">Wipro</span>.

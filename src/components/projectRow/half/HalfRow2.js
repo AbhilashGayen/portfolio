@@ -100,7 +100,7 @@ const SubHeading = styled(Heading)`
   margin-bottom: 0;
   margin-top: 30px;
   color: black;
-  font-family: "Muli";
+  font-family: 'Klima'
 `;
 
 const ProjectParagraph = styled(Paragraph)`

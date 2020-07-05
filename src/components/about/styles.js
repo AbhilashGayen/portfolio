@@ -17,10 +17,9 @@ export const AboutStyle = styled.div`
   p {
     color: #282c34;
     font-family: "Klima";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6rem;
-    letter-spacing: 0.5px;
+    font-size: 18px;
+    line-height: 1.8rem;
+    letter-spacing: 0.6px;
   }
 
   @media (max-width: 720px) {

@@ -5,7 +5,7 @@ const Logos = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 40px;
-  margin: 1rem 0;
+  margin: 1rem 0 4rem 0;
   justify-items: flex-start;
 
   img {
@@ -15,7 +15,8 @@ const Logos = styled.div`
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 720px) {
+    margin: 1rem 0 2rem 0;
     grid-template-columns: repeat(4, 1fr);
   }
 `;
