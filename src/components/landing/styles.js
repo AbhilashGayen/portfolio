@@ -37,6 +37,11 @@ export const Container = styled.div`
   background-position: 100% 100%;
   background-size: 50% 90%;
 
+  @media (max-width: 1200px) {
+    background-size: 25%;
+    background-position: 90% 100%;
+  }
+
   @media (max-width: 720px) {
     background-size: 90%;
     background-position: 115px 300px;
@@ -112,7 +117,7 @@ export const Left = styled.div`
     transform-origin: 70% 70%;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 959px) {
     position: absolute;
     top: 2%;
     left: 5%;

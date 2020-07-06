@@ -20,7 +20,7 @@ const Container = styled.div`
     margin: 0;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 959px) {
     width: 95%;
     padding: 0 1rem;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@ const StyledLink = styled(Link)`
   img {
     width: 50px;
 
-    @media (max-width: 720px) {
+    @media (max-width: 959px) {
       width: 25px;
     }
   }
@@ -51,7 +51,7 @@ const Social = styled.div`
       width: 35px;
       transition: all 0.4s ease-in-out;
 
-      @media (max-width: 720px) {
+      @media (max-width: 959px) {
         width: 22px;
       }
     }
