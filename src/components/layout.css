@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: "Katwijk";
+  src: url("../assets/fonts/Katwijk.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Graph";
+  src: url("../assets/fonts/Graph.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Klima";
+  src: url("../assets/fonts/Klima.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HindSiliguri";
+  src: url("../assets/fonts/HindSiliguri.ttf") format("truetype");
+}
+
 * {
   padding: 0;
   margin: 0;

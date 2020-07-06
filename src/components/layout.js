@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Header from "./header/header"
 import "./layout.css"
-import GlobalFonts from "../assets/fonts/font"
+//import GlobalFonts from "../assets/fonts/font"
 import Footer from "./footer/footer"
 import { motion } from "framer-motion"
 
@@ -38,7 +38,6 @@ const FooterStyle = styled.div`
 const Layout = ({ height, children }) => {
   return (
     <>
-      <GlobalFonts />
       <Header />
       <motion.div enterAfterExit
         initial={{ opacity: 0 }}
