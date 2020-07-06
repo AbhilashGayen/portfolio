@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ff5733;
+  background: #e87b3a;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -30,9 +30,9 @@ export const Image = styled.img`
   margin: 0;
   transition: all 0.4s ease-in-out;
 
-    @media (max-width: 640px) {
-      padding: 2px;
-    }
+  @media (max-width: 640px) {
+    padding: 2px;
+  }
 `
 
 export const StyledBurger = styled.div`
