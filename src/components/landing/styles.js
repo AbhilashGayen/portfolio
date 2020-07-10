@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components"
-import landing from "../../images/landing1.svg"
 
 const wave = keyframes`
   0% {
@@ -26,57 +25,43 @@ const wave = keyframes`
 `
 
 export const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   width: auto;
   margin: 0;
   padding: 0;
-  background: white;
-  background-image: url(${landing});
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 100% 100%;
-  background-size: 50% 90%;
-
-  @media (max-width: 1200px) {
-    background-size: 25%;
-    background-position: 90% 100%;
-  }
-
-  @media (max-width: 720px) {
-    background-size: 90%;
-    background-position: 115px 300px;
-  }
 `
 
 export const Div = styled.div`
-  width: 90%;
-  height: auto;
+  width: 70%;
   overflow: hidden;
-  margin: auto;
-  padding: auto 5rem;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
-  align-content: center;
 
-  @media (max-width: 720px) {
-    width: 90%;
-    padding: 0;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 5%;
     flex-direction: column;
+    height: -webkit-fill-available;
   }
 `
 
 export const Left = styled.div`
-  position: fixed;
-  top: 30%;
-  left: 15%;
-  width: 80%;
+  z-index: 2;
+  float: left;
+  width: 55%;
   height: auto;
-  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
 
   h1 {
     padding-top: 0.5rem;
     display: inline-block;
     font-size: 68px;
-    line-height: 1.1;
+    line-height: 1.2;
     font-family: "Raleway";
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -117,50 +102,44 @@ export const Left = styled.div`
     transform-origin: 70% 70%;
   }
 
-  @media (max-width: 959px) {
-    position: absolute;
-    top: 2%;
-    left: 5%;
-
-    h4 {
-      padding-left: 1vw;
-      text-align: left;
-      font-size: 16px;
-    }
-
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 85%;
     h1 {
       font-size: 44px;
-      line-height: 1.2;
-      text-align: left;
     }
 
+    h4 {
+      font-size: 16px;
+    }
     p {
-      text-align: left;
       font-size: 26px;
-      line-height: 1.4;
-      letter-spacing: 0.2rem;
+    }
+
+    .line-break {
+      width: 70%;
     }
   }
 `
 
 export const Right = styled.div`
+  z-index: 1;
   float: right;
-  width: 50%;
+  width: 45%;
   height: auto;
   color: white;
   margin-top: 1rem;
 
   img {
-    object-fit: cover;
-    height: 90%;
+    width: 100%;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 768px) {
+    position: relative;
     width: 100%;
-    margin-top: 2rem;
-    img {
-      width: 100%;
-    }
+    bottom: 10.5rem;
+    left: 7rem;
   }
 `
 
