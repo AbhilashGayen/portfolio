@@ -1,15 +1,15 @@
 import React from "react"
 import TechStack from "../../components/TechStack"
 import { AboutStyle } from "./styles"
-import about from "../../images/about.png"
 import ForwardLink from "../forwardLink"
 import { motion } from "framer-motion"
+import Image from "./image"
 
 const About = () => {
   return (
     <>
       <AboutStyle>
-        <img src={about} alt="About" width="100%" />
+        <Image />
         <br />
         <motion.div
           initial={{ x: "-50%", opacity: 0, skew: 45 }}

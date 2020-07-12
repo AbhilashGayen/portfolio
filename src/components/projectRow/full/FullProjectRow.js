@@ -3,7 +3,8 @@ import styled from "styled-components"
 import { breakpoints } from "../../Media"
 import Heading from "../../Heading"
 import Paragraph from "../../Paragraph"
-import Launchpad from "../../../images/Launchpad.png"
+import Image from "./image"
+import { motion } from "framer-motion"
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -48,7 +49,7 @@ const ProjectLink = styled(Paragraph)`
   }
 `
 
-const ProjectImage = styled.img`
+const ProjectImage = styled(Image)`
   width: 100%;
   border-radius: 4px;
   transition-duration: 0.3s;
@@ -57,7 +58,6 @@ const ProjectImage = styled.img`
     margin: auto;
   }
 `
-
 const Project = styled.div`
   width: 100%;
   height: auto;
@@ -110,8 +110,14 @@ function FullProjectRow() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <ProjectImage src={`${Launchpad}`} alt="launchpad" />
-          <SubHeading>NetOxygen Launchpad</SubHeading>
+          <ProjectImage />
+          <motion.div
+            initial={{ y: "3vw", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            <SubHeading>NetOxygen Launchpad</SubHeading>
+          </motion.div>
         </a>
         <ProjectParagraph>
           Working for NetOxygen at Wipro has taught me so much about myself and
